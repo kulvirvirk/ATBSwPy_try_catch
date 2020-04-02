@@ -2,7 +2,10 @@
 # 2. add try and except statement
 
 def divide_by(number):
-  return 50/number
+  try:
+    return 50/number
+  except ZeroDivisionError:
+    print ('Error: you can\'t divide by zero')
 
 print(divide_by(2))
 print(divide_by(10))
